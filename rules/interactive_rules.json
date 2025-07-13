@@ -1,0 +1,806 @@
+[
+  {
+    "vendor": "DC AMP Services NZ Limi SALARY",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Next Generat",
+    "category": "N/A",
+    "is_business": true,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WAREHOUSE ST",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT THE WAREHOUS",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT KBB MUSIC EP",
+    "category": "Equipment",
+    "is_business": true,
+    "usage_pct": 100
+  },
+  {
+    "vendor": "VT AMAZON MARKE (AUD 73.62 @ 0.90 )",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "AP Develop NZ Ltd. 6/18 Commodore dr Rent",
+    "category": "Rent",
+    "is_business": true,
+    "usage_pct": 25
+  },
+  {
+    "vendor": "VT CAFE ETAGE",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT PAYPAL *GOOG",
+    "category": "Subscription",
+    "is_business": true,
+    "usage_pct": 100
+  },
+  {
+    "vendor": "VT NEW WORLD MI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Z Royal Oak",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "AP Joint account H. Insurance",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DD MERCURY NZ LTD MERCURY LIMI 00025437485",
+    "category": "Transport",
+    "is_business": true,
+    "usage_pct": 25
+  },
+  {
+    "vendor": "VT APPLE.COM/BI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DD Next Gen Clubs Akld NGCAD5117290",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT THE KINGSLAN",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT DOWNTOWN CAR",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT TRADEME S2B2",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT BOTTICELLI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WOOLWORTHS N",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP Botticelli 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Oasis Clinic Rick Alves 2327790",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "AP Serious Saver Saving for b onus",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WATERCARE",
+    "category": "Water",
+    "is_business": true,
+    "usage_pct": 25
+  },
+  {
+    "vendor": "VT Melba Hillsb",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT One NZ",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Caltex Weste",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WILSON PARKI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT NETFLIX.COM",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT OPENAI *CHAT (USD 23.00 @ 0.58 )",
+    "category": "Subscription",
+    "is_business": true,
+    "usage_pct": 50
+  },
+  {
+    "vendor": "EP TOASTY 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT TANK COMMERC",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WESTFIELD SH",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT EVENT CINEMA",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP Bombay Gents Hairsty 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT ST PIERRE'S",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MATSU SUSHI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WHITCOULLS N",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT ilovesong.ai (USD 88.00 @ 0.59 )",
+    "category": "Subscription",
+    "is_business": true,
+    "usage_pct": 100
+  },
+  {
+    "vendor": "DD AA INSURANCE PRE AMV003862115 200103862115",
+    "category": "Insurance",
+    "is_business": true,
+    "usage_pct": 25
+  },
+  {
+    "vendor": "EP Circus Circus Cafe 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT U GO Hillsbo",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MOISES AI (USD 3.99 @ 0.59 )",
+    "category": "Subscription",
+    "is_business": true,
+    "usage_pct": 100
+  },
+  {
+    "vendor": "BP K J Tamati BILL PAYMENT",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT THE PUMPHOUS",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT FRENCH RENDE",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Joint account Karate May25",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DC MRS A PEREIRA ESTEVE Emana Refund",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT EB *Inner Ch",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DC 01-0194-0364266-01 CREDIT TRANSFER 092724",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CROCS NZ ECO",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Deadshot",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT TAROCASH LYN",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DD YMCANORTHINC 647174515",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT REVELRY",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CIVIC CAR PA",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Starbucks Br",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Chemist Ware",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CHILEAN FOOD",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "DD 01-0194-0364266-52 DEBIT TRANSFER 115535",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Pak N Save R",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Susan Bolam counsell Rick 5/2/25",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT AT DOWNTOWN",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MANUKA CAFE",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Gull",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Naadira Desai Stationary25",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP ONE NZ A Rick Alves d Business ph 021328872",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "AT ACU AAP1350 Mobil Onehun ga 095410",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT WIX.COM (USD 28.57 @ 0.56 )",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT DD *DOORDASH",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP BENTO 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT SP DOCTORVOX",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT El Origen",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT LYNFIELD POS",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Donde.Don.JC",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT SP BLENDI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MUSIC WORKS",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT KMART - ST L",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Quality Care",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT VENDING DIRE",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MUFFIN BREAK",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT TORO CHURRO",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT DRAGON QUEST",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT NOEL LEEMING",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP Tank Lynnmall 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Bj Peck Gavin prezy",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT GONG CHA LYN",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT ATRIUM CARPA",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Jungle 8",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT LIFENZ.ORG",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Akld Transpo",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT NEW ZEALAND",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Shape Up Bar",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP MELROSE DAIRY 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP SHABANI,HEYDA BILL PAYMENT",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP BERNAL,DIEGO Scrooge Ticket",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MOBIL CONSTE",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT LIL CUZZIES",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CHARLOTTEWOR",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT LOVISA LYNMA",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CIRCUS CIRCU",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP N HASSEN DE MEDEIROS parking",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT AGODA.COM JQ",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Farro Fresh",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Hoyts",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "AT ANZ S3B1750 Stoddard Rd Br 1 150537",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT FARMERS 1229",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Domino's Piz",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT CHICKHEN REP",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Ignacio Valencia Malt dec/24",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Marcelo Valencia new Malt 6/9/24",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT JETSTAR AI",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT BP CONNECT J",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Nicolinis Bi",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT RELAY",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Z Petone",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT MCKINNON STR",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Auckland Tra",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT Sky City Fla",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT SKYCITY AUCK",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT GOOD PLANET",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT HOPPERS",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT GAME OVER AU",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP Malt Public House 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP PONSONBY SOCIAL CLUB 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP GAME OVER AUCKLAND 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP TAKAPUNA CLINIC PHAR 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT AT PUBLIC TR",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT YMCA 0429 Ca",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "BP Cherry Music Studio Safira Piano t 1 25-43252025",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP BarberShopCo New Lyn 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP ARYA AUTOMOTIVE LIMI 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "VT JB HI-FI - L",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  },
+  {
+    "vendor": "EP THE KINGSLANDER 483561****** 6871 C",
+    "category": "N/A",
+    "is_business": false,
+    "usage_pct": 0
+  }
+]
