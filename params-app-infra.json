@@ -1,0 +1,19 @@
+[
+    {
+      "ParameterKey": "ProjectName",
+      "ParameterValue": "expense-app"
+    },
+    {
+      "ParameterKey": "ClusterName",
+      "ParameterValue": "expense-app-cluster"
+    },
+    {
+      "ParameterKey": "Subnet1Id",
+      "ParameterValue": "subnet-09a42ba4edb72de61"
+    },
+    {
+      "ParameterKey": "Subnet2Id",
+      "ParameterValue": "subnet-04af54c5c5da960ee"
+    }
+  ]
+  

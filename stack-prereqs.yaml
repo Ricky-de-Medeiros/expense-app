@@ -1,0 +1,77 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Pipeline prerequisites – Artifact S3 bucket and KMS key
+
+Parameters:
+  ProjectName:
+    Type: String
+    Description: A name prefix for resources
+    Default: Expense-App
+  ArtifactBucketName:
+    Type: String
+    Description: Globally unique S3 bucket name for storing build artifacts
+    Default: 898101087885-ap-southeast-2-pipeline-artifacts-bucket
+
+Resources:
+
+  ArtifactBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref ArtifactBucketName
+      VersioningConfiguration:
+        Status: Enabled
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: aws:kms
+              KMSMasterKeyID: !Ref ArtifactKey
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  ArtifactKey:
+    Type: AWS::KMS::Key
+    Properties:
+      Description: Encryption key for CodePipeline and CodeBuild artifacts
+      KeyPolicy:
+        Version: 2012-10-17
+        Statement:
+          - Sid: AllowRootAccount
+            Effect: Allow
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:root
+            Action: "kms:*"
+            Resource: "*"
+          - Sid: AllowCodeBuildAndPipeline
+            Effect: Allow
+            Principal:
+              Service:
+                - codebuild.amazonaws.com
+                - codepipeline.amazonaws.com
+            Action:
+              - kms:Encrypt
+              - kms:Decrypt
+              - kms:ReEncrypt*
+              - kms:GenerateDataKey*
+              - kms:DescribeKey
+            Resource: "*"
+
+  ArtifactKeyAlias:
+    Type: AWS::KMS::Alias
+    Properties:
+      AliasName: !Sub alias/${ProjectName}-artifact-key
+      TargetKeyId: !Ref ArtifactKey
+
+Outputs:
+  ArtifactBucketName:
+    Description: Name of the artifact S3 bucket
+    Value: !Ref ArtifactBucket
+    Export:
+      Name: !Sub ${ProjectName}-ArtifactBucket
+
+  ArtifactKeyArn:
+    Description: ARN of the KMS key for artifact encryption
+    Value: !GetAtt ArtifactKey.Arn
+    Export:
+      Name: !Sub ${ProjectName}-ArtifactKey

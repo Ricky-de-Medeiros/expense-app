@@ -1,0 +1,158 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: ECS Fargate setup for expense-app with Lambda trigger and logging
+
+Parameters:
+  ProjectName:
+    Type: String
+    Default: expense-app
+  ClusterName:
+    Type: String
+    Default: expense-app-cluster
+  Subnet1Id:
+    Type: String
+  Subnet2Id:
+    Type: String
+
+Resources:
+  TaskSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for Fargate task
+      VpcId: !ImportValue expense-app-VPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 8501
+          ToPort: 8501
+          CidrIp: 0.0.0.0/0
+
+  TaskExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${ProjectName}-execution-role"
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/CloudWatchLogsFullAccess
+
+  LogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub "/ecs/${ProjectName}"
+      RetentionInDays: 7
+
+  FargateTaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      Family: !Sub "${ProjectName}-task"
+      Cpu: "512"
+      Memory: "1024"
+      NetworkMode: awsvpc
+      RequiresCompatibilities: [FARGATE]
+      ExecutionRoleArn: !GetAtt TaskExecutionRole.Arn
+      ContainerDefinitions:
+        - Name: expense-app
+          Image: !ImportValue expense-app-ECRRepoUri
+          PortMappings:
+            - ContainerPort: 8501
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Ref LogGroup
+              awslogs-region: !Ref AWS::Region
+              awslogs-stream-prefix: ecs
+
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: !Sub "${ProjectName}-lambda-role"
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: allow-ecs-run
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - ecs:RunTask
+                Resource: "*"
+              - Effect: Allow
+                Action:
+                  - iam:PassRole
+                Resource: "*"
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogGroup
+                  - logs:CreateLogStream
+                  - logs:PutLogEvents
+                Resource: "*"
+
+  InvokeFargateLambda:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Sub "${ProjectName}-trigger"
+      Handler: index.handler
+      Runtime: python3.10
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Timeout: 30
+      Code:
+        ZipFile: |
+          import os
+          import boto3
+
+          def handler(event, context):
+              ecs = boto3.client('ecs')
+              response = ecs.run_task(
+                  cluster=os.environ['CLUSTER'],
+                  launchType='FARGATE',
+                  taskDefinition=os.environ['TASK_DEF'],
+                  networkConfiguration={
+                      'awsvpcConfiguration': {
+                          'subnets': [
+                              os.environ['SUBNET1'],
+                              os.environ['SUBNET2']
+                          ],
+                          'assignPublicIp': 'ENABLED',
+                          'securityGroups': [os.environ['SG']]
+                      }
+                  }
+              )
+              return response
+      Environment:
+        Variables:
+          CLUSTER: !Ref ClusterName
+          TASK_DEF: !Ref FargateTaskDefinition
+          SUBNET1: !Ref Subnet1Id
+          SUBNET2: !Ref Subnet2Id
+          SG: !Ref TaskSecurityGroup
+
+Outputs:
+  TaskDefArn:
+    Description: ARN of the ECS Task Definition
+    Value: !Ref FargateTaskDefinition
+    Export:
+      Name: !Sub "${ProjectName}-TaskDefArn"
+
+  LambdaTriggerName:
+    Description: Name of the Lambda function that starts ECS task
+    Value: !Ref InvokeFargateLambda
+    Export:
+      Name: !Sub "${ProjectName}-LambdaTrigger"
+
+  TaskSecurityGroupId:
+    Description: Security group used by ECS task
+    Value: !Ref TaskSecurityGroup
+    Export:
+      Name: !Sub "${ProjectName}-TaskSG"
